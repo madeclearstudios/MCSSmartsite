@@ -17,6 +17,7 @@
     <a href="#top" class="nav__logo"><img src="images/logo_black.png" alt="Made Clear Studios" width="160" height="53"></a>
     <nav class="nav__links" id="nav-links" aria-label="Main">
       <a href="#features">Features</a>
+      <a href="#inside">Look inside</a>
       <a href="#how">How it works</a>
       <a href="#use-cases">Use cases</a>
       <a href="#pricing">Pricing</a>
@@ -130,8 +131,176 @@
   </div>
 </section>
 
+<!-- INSIDE THE PLATFORM -->
+<section class="section section--grey" id="inside">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="tag">Look inside</span>
+      <h2>From sign-up to answer <mark>in four screens</mark>.</h2>
+      <p class="lead">Click through what a physician sees, and what your team sees afterwards. Example content.</p>
+    </div>
+
+    <div class="tour__tabs" role="tablist" aria-label="Platform screens">
+      <button class="tour__tab" role="tab" id="tab-access" aria-controls="screen-access" aria-selected="true"><b>1</b>Request access</button>
+      <button class="tour__tab" role="tab" id="tab-ask" aria-controls="screen-ask" aria-selected="false" tabindex="-1"><b>2</b>Ask &amp; browse</button>
+      <button class="tour__tab" role="tab" id="tab-answer" aria-controls="screen-answer" aria-selected="false" tabindex="-1"><b>3</b>Watch the answer</button>
+      <button class="tour__tab" role="tab" id="tab-admin" aria-controls="screen-admin" aria-selected="false" tabindex="-1"><b>4</b>Admin results</button>
+    </div>
+
+    <div class="browser">
+      <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url" id="browser-url">yourlibrary.madeclear.ai/login</span></div>
+
+      <!-- 1. Request access -->
+      <div class="screen" role="tabpanel" id="screen-access" aria-labelledby="tab-access">
+        <div class="app-head"><b>Your Brand</b><span>Masterclass film library</span></div>
+        <div class="access">
+          <div class="access__intro">
+            <p class="kicker">Masterclass film library</p>
+            <h3 class="access__title"><mark>Ask the experts.</mark> Hear it from them, on camera.</h3>
+            <p>Twelve masterclasses with leading specialists. Ask a question in your own words and get the answer in theirs.</p>
+            <ul class="ticks">
+              <li>Every answer comes only from what was said in the films</li>
+              <li>Each answer plays from the exact moment</li>
+              <li>Test what you know, section by section</li>
+            </ul>
+          </div>
+          <form class="access__form" id="access-form" novalidate>
+            <div class="seg-toggle"><button type="button">Sign in</button><button type="button" class="is-on">Request access</button></div>
+            <h4>Request access</h4>
+            <p class="small">A minute to fill in. It tells us who the films are reaching, so we can make the right ones next.</p>
+            <label for="f-name">Full name</label><input id="f-name" type="text" value="Dr Alex Moreau">
+            <label for="f-email">Work email</label><input id="f-email" type="email" value="a.moreau@hospital.org">
+            <label for="f-pass">Create a password</label><div class="pw"><input id="f-pass" type="password" value="example-pass"><span>Show</span></div>
+            <p class="form-sub">About you</p>
+            <div class="row2">
+              <div><label for="f-country">Country</label><select id="f-country"><option>France</option><option>Germany</option><option>United Kingdom</option></select></div>
+              <div><label for="f-spec">Specialty</label><select id="f-spec"><option>Interventional radiology</option><option>Cardiology</option><option>Oncology</option></select></div>
+            </div>
+            <div class="row2">
+              <div><label for="f-years">Years in practice <em>optional</em></label><select id="f-years"><option>5–10</option><option>Under 5</option><option>10+</option></select></div>
+              <div><label for="f-interest">Main interest <em>optional</em></label><select id="f-interest"><option>Complex lesions</option><option>Imaging</option></select></div>
+            </div>
+            <label class="check"><input id="f-agree" type="checkbox" checked> I agree that my details and what I do on this site may be used to improve the content.</label>
+            <label class="check"><input id="f-rep" type="checkbox"> Put me in touch with my local representative. <em>Optional</em></label>
+            <button class="btn btn--yellow btn--block" type="submit">Request access</button>
+            <p class="form-foot">Team member? <a href="#inside">Marketing sign in</a> · <a href="#inside">Medical affairs sign in</a></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- 2. Ask & browse -->
+      <div class="screen" role="tabpanel" id="screen-ask" aria-labelledby="tab-ask" hidden>
+        <div class="app-head app-head--nav"><b>Your Brand</b><span>Masterclass</span><nav><a class="is-on">Ask a question</a><a>Films</a><a>Take the test</a><span class="avatar">AM</span></nav></div>
+        <div class="ask">
+          <p class="kicker kicker--y">Masterclass film library</p>
+          <h3 class="ask__title">Ask a question. <mark>Every answer is drawn from these films alone.</mark></h3>
+          <p class="ask__sub">Twelve masterclasses, and each answer plays from the exact moment it was said.</p>
+          <form class="ask__bar" id="ask-form">
+            <label for="ask-input" class="sr-only">Ask a question</label>
+            <input id="ask-input" type="text" placeholder="Ask a question" value="Tell me about the waveform">
+            <span class="mic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
+            <button class="btn btn--yellow" type="submit">Ask</button>
+          </form>
+          <div class="ask__chips">
+            <button class="q-chip">When is this technique most effective?</button>
+            <button class="q-chip">How do you prepare the balloon?</button>
+            <button class="q-chip">What can imaging show that angiography can't?</button>
+            <button class="q-chip">What did the trial results show?</button>
+            <button class="q-chip">How do you size a stent?</button>
+            <button class="q-chip">How do you minimise complications?</button>
+          </div>
+        </div>
+        <div class="films">
+          <div class="films__head"><h4>The masterclasses</h4><span>12 films · 20h 47m</span></div>
+          <div class="films__grid">
+            <article class="film"><div class="thumb thumb--slide"><span>1:14:30</span></div><b>Class 1: Challenges and unmet needs</b><small>9 chapters · 82 slides</small></article>
+            <article class="film"><div class="thumb thumb--case"><span>1:42:36</span></div><b>Class 2: An introduction to the technique</b><small>9 chapters · 33 slides</small></article>
+            <article class="film"><div class="thumb thumb--scan"><span>1:01:23</span></div><b>Class 3: Imaging in practice</b><small>10 chapters · 78 slides</small></article>
+            <article class="film"><div class="thumb thumb--studio"><span>1:29:37</span></div><b>Class 4: How it works, and when to use it</b><small>11 chapters · 69 slides</small></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Answer -->
+      <div class="screen" role="tabpanel" id="screen-answer" aria-labelledby="tab-answer" hidden>
+        <div class="app-head app-head--nav"><b>Your Brand</b><span>Film library</span><nav><a>Contact your local rep</a><span class="avatar">AM</span></nav></div>
+        <div class="answer">
+          <div class="answer__left">
+            <p class="kicker">You asked</p>
+            <h3 class="answer__q" id="answer-q">Tell me about the waveform</h3>
+            <div class="answer__bar"><span class="kicker">In their own words</span><button class="btn btn--dark btn--sm" id="play-all" type="button">▶ Play all <small>2 clips · 0:45</small></button></div>
+            <article class="quote-card" data-clip="0">
+              <div class="thumb thumb--studio thumb--play"><b>1</b></div>
+              <div>
+                <h5>Class 2: An introduction to the technique</h5>
+                <p>“Within these lesions the reflection in that area really maximises the effect in the first phase of delivery. That's the concept we looked at earlier.”</p>
+                <small>Masterclass · 33:32–33:49</small>
+              </div>
+            </article>
+            <article class="quote-card" data-clip="1">
+              <div class="thumb thumb--slide thumb--play"><b>2</b></div>
+              <div>
+                <h5>Class 2: An introduction to the technique</h5>
+                <p>“The signal is amplified within this area, so the energy delivered is higher earlier on. You get a composite of the fundamental and harmonic frequencies.”</p>
+                <small>Masterclass · 4:51–5:20</small>
+              </div>
+            </article>
+            <div class="rep-box"><div><b>Want to talk this through?</b><p>A local representative can follow up on this question with you.</p></div><button class="btn btn--ghost btn--sm" type="button">Contact your local rep</button></div>
+          </div>
+          <div class="answer__right">
+            <div class="player">
+              <div class="player__frame"><div class="thumb thumb--studio" id="player-shot"></div><span class="player__label" id="player-label">Clip 1 of 2 · Class 2 · 33:32</span><button class="player__btn" id="player-btn" type="button" aria-label="Play">▶</button></div>
+              <div class="player__track"><span id="player-fill"></span></div>
+            </div>
+            <div class="summary">
+              <p class="kicker">Generated summary</p>
+              <p class="small">Generated by AI from these quotes and nothing else. Each number plays its source. Education only, not medical advice.</p>
+              <p class="summary__text">The waveform involves reflection within the lesion, which amplifies the signal <button class="cite" data-clip="0">1</button><button class="cite" data-clip="1">2</button>. This means the energy delivered is higher earlier in the activation <button class="cite" data-clip="1">2</button>. The fundamental and harmonic frequencies combine to form a composite <button class="cite" data-clip="1">2</button>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Admin -->
+      <div class="screen" role="tabpanel" id="screen-admin" aria-labelledby="tab-admin" hidden>
+        <div class="app-head app-head--nav"><b>Your Brand</b><span>Admin</span><nav><a class="is-on">Overview</a><a>Users</a><a>Questions</a><a>Review queue</a></nav></div>
+        <div class="admin">
+          <div class="admin__kpis">
+            <div><small>Logged on</small><b>412</b><em>+38 this month</em></div>
+            <div><small>Active, last 30 days</small><b>168</b><em>41% of users</em></div>
+            <div><small>Questions asked</small><b>1,240</b><em>3.0 per user</em></div>
+            <div><small>Answered from the films</small><b>87%</b><em>13% are gaps</em></div>
+          </div>
+          <div class="admin__cols">
+            <div class="admin__card">
+              <div class="admin__card-head"><h5>Top questions</h5><span>Last 30 days</span></div>
+              <ul class="qlist">
+                <li><span>When is this technique most effective?</span><i style="--v:100%"></i><b>64</b><em class="pill">Answered</em></li>
+                <li><span>What did the trial results show?</span><i style="--v:78%"></i><b>50</b><em class="pill">Answered</em></li>
+                <li><span>How do you size a stent?</span><i style="--v:55%"></i><b>35</b><em class="pill">Answered</em></li>
+                <li><span>Dosing in renal impairment?</span><i style="--v:42%"></i><b>27</b><em class="pill pill--y">Gap</em></li>
+                <li><span>Use in paediatric patients?</span><i style="--v:25%"></i><b>16</b><em class="pill pill--y">Gap</em></li>
+              </ul>
+            </div>
+            <div class="admin__card">
+              <div class="admin__card-head"><h5>Dr Alex Moreau</h5><span>Interventional radiology · France</span></div>
+              <ul class="ulist">
+                <li>How do you size a stent?</li>
+                <li>What can imaging show that angiography can't?</li>
+                <li>Dosing in renal impairment?</li>
+              </ul>
+              <p class="small">Asked for a rep to get in touch · Test: 4 of 5</p>
+              <button class="btn btn--yellow btn--sm" type="button">Create rep brief</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
-<section class="section section--grey" id="how">
+<section class="section" id="how">
   <div class="wrap">
     <div class="section__head">
       <span class="tag">How it works</span>
