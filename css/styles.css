@@ -289,3 +289,15 @@ details p { padding: 0 1.4rem 1.3rem; color: var(--grey-800); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Additions: stats label, use-case tags, dashboard panel */
+.stats__label { font-family: var(--font-head); font-weight: 700; font-size: var(--fs-small); text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-500); margin-bottom: 2rem; }
+.split__copy .tag--sm { margin-bottom: -0.4rem; }
+.panel--dash { gap: 0.6rem; }
+.dash__kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-bottom: 0.4rem; }
+.dash__kpis div { background: var(--black); color: var(--white); padding: 0.8rem; display: grid; gap: 0.2rem; min-width: 0; }
+.dash__kpis b { font-family: var(--font-head); font-weight: 900; font-size: 1.6rem; line-height: 1; color: var(--yellow); font-variant-numeric: tabular-nums; }
+.dash__kpis small { font-family: var(--font-head); font-size: 0.75rem; color: var(--grey-200); }
+.dash__q { display: flex; justify-content: space-between; align-items: center; gap: 0.8rem; padding: 0.7rem 0.8rem; background: var(--grey-50); border: 2px solid var(--black); font-family: var(--font-head); font-size: 0.9rem; }
+.dash__q span:first-child { min-width: 0; }
+.stats strong { font-size: clamp(2.4rem, 5vw, 3.8rem); }
